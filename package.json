@@ -1,0 +1,39 @@
+{
+  "name": "@mono/core",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "startserver": "lerna run start --scope @mono/server --stream",
+    "startclient": "lerna run start --scope @mono/client --stream"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.1.1",
+    "@graphql-tools/schema": "^9.0.10",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-ws": "^5.11.2",
+    "uuid": "^9.0.0",
+    "ws": "^8.11.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.13.12",
+    "@graphql-codegen/introspection": "2.2.1",
+    "@graphql-codegen/typed-document-node": "^2.3.7",
+    "@graphql-codegen/typescript": "2.8.2",
+    "@graphql-codegen/typescript-operations": "^2.5.7",
+    "@graphql-codegen/typescript-resolvers": "2.7.7",
+    "@types/node": "^18.11.9",
+    "lerna": "^5.6.2",
+    "lorem-ipsum": "^2.0.8",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.3"
+  },
+  "type": "module",
+  "private": "true"
+}

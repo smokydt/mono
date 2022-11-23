@@ -1,0 +1,14 @@
+query Comments {
+  comments {
+    id
+    content
+  }
+}
+
+query Books {
+  books {
+    id
+    title
+    author
+  }
+}

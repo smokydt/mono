@@ -1,0 +1,6 @@
+subscription CommentsSubscription {
+  commentAdded {
+    id
+    content
+  }
+}
