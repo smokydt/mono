@@ -10,6 +10,7 @@ import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHt
 import { makeExecutableSchema } from '@graphql-tools/schema';
 import { WebSocketServer } from 'ws';
 import { useServer } from 'graphql-ws/lib/use/ws';
+import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
 
 import { loggingPlugin } from './plugin';
 import { resolvers } from './resolvers';
@@ -51,6 +52,7 @@ const server = new ApolloServer({
       },
     },
     loggingPlugin,
+    ApolloServerPluginLandingPageLocalDefault(),
   ],
 });
 
