@@ -3,9 +3,10 @@ documents: src/graphql/*.graphql
 generates:
   src/graphql/generated/types.ts:
     plugins:
+      - add:
+          content:
+            "/* This is an automatically generated file, do not edit. */"
       - typescript
       - typescript-operations
       - typed-document-node
-
-
  

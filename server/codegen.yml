@@ -2,12 +2,11 @@ schema: src/graphql/schema.graphql
 generates:
   src/graphql/generated/types.ts:
     plugins:
+      - add:
+          content:
+            "/* This is an automatically generated file, do not edit. */"
       - typescript
       - typescript-resolvers
   src/graphql/generated/introspection.json:
     plugins:
       - introspection
-
-
-
- 
